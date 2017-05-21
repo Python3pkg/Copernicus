@@ -70,7 +70,7 @@ class Image(object):
         placehold ="".center(int(Taille))
         for line in self.reduce(self.convert()):
             if line.strip():
-                print(placehold , line)
+                print((placehold , line))
         yield ""
 
     def __str__(self):
@@ -171,7 +171,7 @@ def main(args):
     for imgpath in args:
         for line in Image(imgpath):
                  placehold ="".center(Taille)
-                 print(placehold + line)
+                 print((placehold + line))
 
 
 if __name__ == '__main__':
